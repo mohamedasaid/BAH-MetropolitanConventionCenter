@@ -29,6 +29,13 @@ public class CustomerController {
         return customerService.getAllCustomer();
     }
 
+    @PostMapping("/create")
+    @ResponseBody
+    public void addCustomer(@RequestBody() CustomerList customerList) {
+        customerService.addCustomer(customerList);
+
+    }
+
 
 
 

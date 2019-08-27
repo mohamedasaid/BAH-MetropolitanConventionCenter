@@ -25,8 +25,6 @@ public class CustomerService {
     }
 
     // Creat account
-    @PostMapping("/create")
-    @ResponseBody
     public void addCustomer(CustomerList customerList) {
         customers.add(customerList);
 
