@@ -1,7 +1,4 @@
-package io.mcc.customerservice.domail;
-
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.stereotype.Service;
+package io.mcc.customerservice.domain;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -23,8 +20,6 @@ public class Customer {
     public Customer() {
 
     }
-
-
 
     public String getName() {
         return name;
